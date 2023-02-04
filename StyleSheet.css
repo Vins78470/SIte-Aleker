@@ -1,0 +1,141 @@
+*{
+    margin : 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+    {
+    font-family: 'Poppins';    
+    }
+
+header{
+    height: 150vh;
+    width: 100vw;
+    background: rgba(224, 101, 0, 0.226); 
+    backdrop-filter: blur(8px); 
+    background-size: cover;
+    
+    
+}
+
+.fleche{
+    height: 75px;
+    width: 75px;
+    background: rgb(149, 96, 173);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.navbar{
+    position: absolute;
+    padding : 50px;
+    padding-right: 650px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing:border-box;
+    align-items: center;
+}
+
+
+
+.navbar a {
+color : white;
+}
+
+
+
+.navbar .nav-links ul
+ {
+    display: flex;
+}
+
+
+.navbar .nav-links ul li
+ {
+    margin : 0 30px;
+    transition: all 0.7s ease-in-out
+}
+
+.navbar .nav-links ul li:hover
+ {
+    transform: scale(1.2);
+    
+}
+
+.navbar .nav-links ul li:active
+ {
+    transform: scale(0.8);
+    transition: all 1s ease-in-out;
+   
+}
+
+
+.navbar .menu-btn
+{
+    display: none;
+   position: absolute;
+   top : 50px;
+   right: 50px;
+   width: 75px;
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu-btn{
+        display:block;
+        cursor: pointer;
+    }
+   
+     .nav-links {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.411);
+        backdrop-filter: blur(7px);
+        width: 100vw;
+        height: 100vh;
+        top : 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : -100%;
+        transition: all 0.5s ease-in ;
+    }
+    
+   .mobile-menu
+    {
+
+        margin-left:0;
+        
+    }
+
+    .navbar .nav-links ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+      
+    }
+
+    .navbar .nav-links ul li
+    {
+       margin : 20px 0px;
+       font-size : 1.5em;
+   }
+  }
+
+
+
+  
